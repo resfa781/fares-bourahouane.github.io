@@ -1,346 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fares Bourahouane — Réseaux &amp; Télécommunications</title>
-<meta name="description" content="Fares Bourahouane, étudiant BUT Réseaux &amp; Télécommunications, recherche une alternance de 24 mois à partir de septembre 2026.">
-
-<link rel="icon" href="assets/logo-f.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fares Bourahouane - Portfolio Alternance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .profile-side {
+            background: white;
+            border-right: 1px solid #e2e8f0;
+        }
+        .cv-view {
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            height: calc(100vh - 180px);
+            min-height: 600px;
+        }
+    </style>
 </head>
-<body>
+<body class="text-slate-900">
 
-  <!-- ============ FIXED CONTROLS (unchanged behaviour, restyled) ============ -->
-  <div class="progress-rail" aria-hidden="true"><span class="progress-fill"></span></div>
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        
+        <aside class="lg:w-1/3 w-full profile-side p-8 lg:p-12 flex flex-col justify-between">
+            <div>
+                <div class="mb-8 flex justify-center lg:justify-start">
+                    <div class="w-32 h-32 rounded-2xl overflow-hidden shadow-2xl border-2 border-blue-500 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+                        <img src="photo-cv-2026.jpg" alt="Fares Bourahouane" class="w-full h-full object-cover">
+                    </div>
+                </div>
 
-  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Ouvrir la navigation">
-    <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
-  </button>
+                <h1 class="text-3xl font-bold tracking-tight text-slate-900">Bourahouane Fares</h1>
+                <p class="text-blue-600 font-semibold mt-1">Étudiant BUT Réseaux & Télécoms | 1ère Année</p>
 
-  <div class="brand" aria-hidden="true">
-    <span class="brand-mark">Fares Bourahouane</span>
-  </div>
+                <div class="mt-6 inline-flex items-center px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-100">
+                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-ping"></span>
+                    Recherche Alternance Sept. 2026
+                </div>
 
-  <a class="cta-fixed" href="assets/CV_Fares_Bourahouane.pdf" target="_blank" rel="noopener">
-    Télécharger le CV
-  </a>
+                <div class="mt-8 space-y-4">
+                    <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">À propos</h2>
+                    <p class="text-slate-600 leading-relaxed italic">
+                        "Passionné par l'infrastructure et la cybersécurité, je recherche un contrat d'apprentissage de 24 mois (rythme 1 sem. / 1 sem.) pour mettre mes compétences techniques au service de votre entreprise."
+                    </p>
+                </div>
 
-  <nav class="node-rail" aria-label="Sections de la page">
-    <a href="#accueil" data-target="accueil" class="node active"><span class="node-dot"></span><span class="node-label">Accueil</span></a>
-    <a href="#parcours" data-target="parcours" class="node"><span class="node-dot"></span><span class="node-label">Parcours</span></a>
-    <a href="#projets" data-target="projets" class="node"><span class="node-dot"></span><span class="node-label">Projets</span></a>
-    <a href="#interets" data-target="interets" class="node"><span class="node-dot"></span><span class="node-label">Intérêts</span></a>
-  </nav>
+                <div class="mt-10 space-y-4">
+                    <a href="mailto:Fares.t781@gmail.com" class="flex items-center gap-3 p-3 rounded-xl border border-slate-100 hover:bg-blue-50 hover:border-blue-200 transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center group-hover:bg-white text-slate-500 group-hover:text-blue-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <span class="text-sm font-medium text-slate-700">Fares.t781@gmail.com</span>
+                    </a>
+                </div>
+            </div>
 
-  <div class="nav-panel" id="navPanel">
-    <div class="nav-panel-inner">
-      <span class="nav-eyebrow">Navigation</span>
-      <ul class="nav-list">
-        <li><a href="#accueil" data-target="accueil"><span class="nav-list-label">Présentation</span><span class="nav-list-sub">Qui je suis, ce que je cherche</span></a></li>
-        <li><a href="#parcours" data-target="parcours"><span class="nav-list-label">Mon avenir</span><span class="nav-list-sub">Du lycée à l'école d'ingénieur</span></a></li>
-        <li><a href="#projets" data-target="projets"><span class="nav-list-label">Mes projets</span><span class="nav-list-sub">Réseaux, cybersécurité, développement</span></a></li>
-        <li><a href="#interets" data-target="interets"><span class="nav-list-label">Mes intérêts</span><span class="nav-list-sub">Compétences humaines &amp; passions</span></a></li>
-      </ul>
-      <div class="nav-panel-footer">
-        <a href="mailto:fares.bourahouane@gmail.com">fares.bourahouane@gmail.com</a>
-        <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
+            <div class="mt-12 pt-6 border-t border-slate-100">
+                <p class="text-xs text-slate-400">© 2026 • Réalisé par Fares Bourahouane.</p>
+            </div>
+        </aside>
+
+        <main class="lg:w-2/3 w-full bg-slate-100 p-4 lg:p-12 flex flex-col">
+            
+            <div class="flex items-center justify-between mb-6 px-2">
+                <h3 class="text-lg font-bold text-slate-700 uppercase tracking-tight">Mon CV : </h3>
+                <a href="CV - Fares 2026.pdf" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-sm font-semibold hover:bg-blue-600 transition-all flex items-center gap-2 shadow-lg">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Télécharger le PDF
+                </a>
+            </div>
+
+            <div class="cv-view">
+                <iframe src="CV - Fares 2026.pdf" class="w-full h-full border-none" title="CV Fares Bourahouane">
+                    <div class="p-10 text-center">
+                        <p>Votre navigateur ne permet pas l'affichage direct du PDF.</p>
+                        <a href="CV - Fares 2026.pdf" class="text-blue-500 underline">Cliquez ici pour l'ouvrir.</a>
+                    </div>
+                </iframe>
+            </div>
+
+        </main>
     </div>
-  </div>
 
-  <main id="scrollContainer">
-
-    <!-- ============ SECTION 1 — ACCUEIL ============ -->
-    <section id="accueil" class="slide bg-white">
-      <div class="slide-inner hero-grid">
-
-        <div class="hero-copy">
-          <div class="hero-id">
-            <!-- PLACEHOLDER : remplacez ce bloc par <img src="assets/photo.jpg" alt="Fares Bourahouane" class="avatar-photo"> -->
-            <div class="ph-avatar">
-              <img src="assets/logo-f.png" alt="Fares Bourahouane" class="avatar-photo">
-            </div>
-            <p class="eyebrow">Recherche alternance — septembre 2026</p>
-          </div>
-
-          <h1 class="hero-title">Fares Bourahouane</h1>
-          <p class="hero-role">Étudiant BUT Réseaux &amp; Télécommunications — IUT de Vélizy (UVSQ)</p>
-          <p class="hero-pitch">
-            Je construis, sécurise et administre des infrastructures — du câblage jusqu'au service applicatif.
-            À la recherche d'un contrat d'apprentissage de 24 mois, rythme 1 semaine / 1 semaine,
-            orienté Réseaux, Systèmes, DevOps ou Cybersécurité.
-          </p>
-
-          <div class="chip-row">
-            <span class="chip">Réseaux &amp; Infra</span>
-            <span class="chip">Cybersécurité</span>
-            <span class="chip">Systèmes Linux / Windows</span>
-            <span class="chip">Scripting &amp; Dev</span>
-          </div>
-
-          <div class="hero-actions">
-            <a href="#parcours" class="btn btn-primary" data-target="parcours">Voir mon parcours</a>
-            <a href="mailto:fares.bourahouane@gmail.com" class="btn btn-ghost">Me contacter</a>
-          </div>
-
-          <div class="logo-row">
-            <span class="logo-row-label">Établissements</span>
-            <div class="logo-track">
-              <!-- PLACEHOLDER : remplacez par <img src="assets/logo-iut.png" alt="IUT de Vélizy" class="logo-img"> -->
-              <div class="ph-logo">Logo IUT de Vélizy</div>
-              <div class="ph-logo">Logo UVSQ</div>
-              <div class="ph-logo">Logo Télécom SudParis</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mac-window">
-          <div class="mac-bar">
-            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-            <span class="mac-title">CV_Fares_Bourahouane.pdf</span>
-            <a class="mac-open" href="assets/CV_Fares_Bourahouane.pdf" target="_blank" rel="noopener">Ouvrir ↗</a>
-          </div>
-          <div class="mac-body">
-            <iframe src="assets/CV_Fares_Bourahouane.pdf" title="CV de Fares Bourahouane" loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <a class="scroll-cue" href="#parcours" data-target="parcours" aria-label="Section suivante">
-        <span>défiler</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0l-6-6m6 6l6-6"/></svg>
-      </a>
-      <div class="section-fade to-tint" aria-hidden="true"></div>
-    </section>
-
-    <!-- ============ SECTION 2 — PARCOURS ============ -->
-    <section id="parcours" class="slide bg-tint">
-      <div class="slide-inner">
-        <p class="eyebrow">Trajectoire</p>
-        <h2 class="section-title">Mon avenir, étape par étape</h2>
-        <p class="section-lede">Du lycée à l'école d'ingénieur visée — chaque étape mène à la suivante.</p>
-
-        <div class="path-wrap">
-
-          <div class="arrow-bleed" aria-hidden="true">
-            <svg viewBox="0 0 1600 40" preserveAspectRatio="none">
-              <defs>
-                <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto">
-                  <path d="M0,0 L10,6 L0,12 Z"/>
-                </marker>
-              </defs>
-              <line x1="0" y1="20" x2="1584" y2="20" marker-end="url(#arrowhead)"/>
-            </svg>
-          </div>
-
-          <div class="waypoint" style="--pos:64%">
-            <span class="waypoint-dot"></span>
-            <span class="waypoint-label">Alternance recherchée<br>Sept. 2026</span>
-          </div>
-
-          <div class="edu-row">
-          <figure class="edu-card">
-          <div class="ph-image ph-image--tall" style="background-image: url('assets/image-LPN.jpg'); background-size: cover; background-position: center;">
-            <div class="ph-image-overlay">
-              <span class="edu-status status--done">Terminé · 2022–2025</span>
-              <h3>Lycée de la Plaine&nbsp;de&nbsp;Neauphle</h3>
-            </div>
-          </div>
-          <p class="edu-desc">Bac général — spécialités Mathématiques &amp; Physique-Chimie, mention Bien. Trappes (78).</p>
-        </figure>
-
-            <figure class="edu-card edu-card--active">
-              <div class="ph-image ph-image--tall">
-                <span class="ph-tag">Photo à ajouter</span>
-                <div class="ph-image-overlay">
-                  <span class="edu-status status--live">En cours · 2025–2028</span>
-                  <h3>IUT de Vélizy — UVSQ</h3>
-                </div>
-              </div>
-              <p class="edu-desc">BUT Réseaux &amp; Télécommunications, 1<sup>ère</sup> année. Infrastructures, systèmes, télécoms et cybersécurité.</p>
-            </figure>
-
-            <figure class="edu-card">
-              <div class="ph-image ph-image--tall">
-                <span class="ph-tag">Photo à ajouter</span>
-                <div class="ph-image-overlay">
-                  <span class="edu-status status--goal">Objectif · 2028 →</span>
-                  <h3>École d'ingénieur — Télécom SudParis</h3>
-                </div>
-              </div>
-              <p class="edu-desc">Poursuite d'études en ingénierie des réseaux, des systèmes et de la cybersécurité.</p>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="section-fade to-white" aria-hidden="true"></div>
-    </section>
-
-    <!-- ============ SECTION 3 — PROJETS (mise en page journal) ============ -->
-    <section id="projets" class="slide bg-white">
-      <div class="slide-inner">
-        <div class="masthead">
-          <span class="eyebrow">Rubrique — Réseaux, systèmes &amp; cybersécurité</span>
-          <h2 class="section-title">Mes projets</h2>
-        </div>
-        <hr class="rule rule--thick">
-
-        <article class="lead-story">
-          <div class="ph-image ph-image--wide animate">
-            <span class="ph-tag">Image à ajouter</span>
-            <div class="ph-image-overlay ph-image-overlay--top">
-              <span class="tag-label">Projet SAE — Réseaux</span>
-            </div>
-          </div>
-
-          <div class="lead-story-text">
-            <h3>Construire un réseau informatique pour une petite structure</h3>
-            <p class="dek">Architecture haute disponibilité et services virtualisés, du câblage jusqu'à la sécurité des données.</p>
-
-            <div class="lead-story-cols">
-              <div>
-                <h4>Objectifs</h4>
-                <p>Architecture réseau haute disponibilité. Déploiement de services virtualisés et sécurisés.</p>
-              </div>
-              <div>
-                <h4>Mise en œuvre</h4>
-                <p>Routeurs / switchs Cisco, serveur HP sous VMware ESXi. DHCP avec relais, Bind9, Apache/Nginx, GLPI. Stockage RAID 1/LVM, sauvegardes Rsync/Cron.</p>
-              </div>
-              <div>
-                <h4>Bilan critique</h4>
-                <p><b>Atteint —</b> tolérance aux pannes matérielles et serveurs.<br>
-                <b>À améliorer —</b> routage L3, erreur d'ID de VLAN.<br>
-                <b>Prochaine étape —</b> IPBX et automatisation.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <hr class="rule">
-
-        <div class="story-grid">
-          <article class="story">
-            <div class="ph-image animate"><span class="ph-tag">Image à ajouter</span></div>
-            <span class="tag-label">E-commerce — Full-stack</span>
-            <h3>Shop2Maillots</h3>
-            <p>Application e-commerce en PHP/MySQL : authentification Google OAuth, gestion de panier, traitement d'images, architecture de base de données.</p>
-            <p class="byline">PHP · MySQL · OAuth · HTML/CSS</p>
-          </article>
-
-          <article class="story">
-            <div class="ph-image animate"><span class="ph-tag">Image à ajouter</span></div>
-            <span class="tag-label">Cybersécurité</span>
-            <h3>Analyse &amp; défense</h3>
-            <p>Analyse de logs en langage C, tableau de bord dynamique multi-interfaces, et compétition « Hack ton lycée » (CTF).</p>
-            <p class="byline">C · CTF · Sécurité offensive</p>
-          </article>
-
-          <article class="story">
-            <div class="ph-image animate"><span class="ph-tag">Image à ajouter</span></div>
-            <span class="tag-label">Télécommunications</span>
-            <h3>Signal &amp; interception</h3>
-            <p>Modulation AM, translation de fréquence, interception de communications avec Scapy. Découverte de la ToIP auprès d'un professionnel du secteur.</p>
-            <p class="byline">Python · Numpy · Scapy · ToIP</p>
-          </article>
-
-          <article class="story">
-            <div class="ph-image animate"><span class="ph-tag">Image à ajouter</span></div>
-            <span class="tag-label">Projets personnels</span>
-            <h3>Bidouilles &amp; répliques</h3>
-            <p>Réplique de Geometry Dash en 2D/3D et transformation d'un ancien PC portable en serveur fonctionnel.</p>
-            <p class="byline">C++ · Linux · Homelab</p>
-          </article>
-        </div>
-      </div>
-      <div class="section-fade to-tint" aria-hidden="true"></div>
-    </section>
-
-    <!-- ============ SECTION 4 — INTÉRÊTS ============ -->
-    <section id="interets" class="slide bg-tint">
-      <div class="blob" aria-hidden="true"></div>
-      <div class="slide-inner">
-        <p class="eyebrow">Au-delà de l'écran</p>
-        <h2 class="section-title">Mes intérêts</h2>
-        <p class="section-lede">Ce qui me fait avancer, en dehors des salles TP.</p>
-
-        <div class="interests-grid">
-          <div class="interests-col">
-            <h4 class="col-heading">Compétences humaines</h4>
-            <div class="chip-row">
-              <span class="chip">Adaptabilité</span>
-              <span class="chip">Esprit d'équipe</span>
-              <span class="chip">Curieux</span>
-              <span class="chip">Travailleur</span>
-              <span class="chip">Ponctuel &amp; sérieux</span>
-            </div>
-
-            <h4 class="col-heading">Langue</h4>
-            <div class="lang-bar">
-              <div class="lang-bar-head"><span>Anglais</span><span>B1</span></div>
-              <div class="lang-bar-track"><div class="lang-bar-fill" style="--w:52%"></div></div>
-            </div>
-          </div>
-
-          <div class="interests-col interests-col--wide">
-            <h4 class="col-heading">Centres d'intérêt</h4>
-            <div class="interest-list">
-
-              <div class="interest-item">
-                <span class="interest-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
-                </span>
-                <div><h5>Cybersécurité</h5><p>CTF, veille et pratique offensive/défensive.</p></div>
-              </div>
-
-              <div class="interest-item">
-                <span class="interest-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-5 3 5 3M16 9l5 3-5 3M13 5l-2 14"/></svg>
-                </span>
-                <div><h5>Dev web &amp; graphisme</h5><p>Sites, mini-projets, et création de visuels pour le web.</p></div>
-              </div>
-
-              <div class="interest-item">
-                <span class="interest-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" d="M12 3v18M4.5 7.5l15 9M19.5 7.5l-15 9"/></svg>
-                </span>
-                <div><h5>Football &amp; course à pied</h5><p>Sport régulier, esprit d'équipe et discipline.</p></div>
-              </div>
-
-              <div class="interest-item">
-                <span class="interest-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1"/><path stroke-linecap="round" d="M3 8h18M8 21h8"/></svg>
-                </span>
-                <div><h5>Manga &amp; cinéma</h5><p>Blue Lock, et Spider-Man : Across the Spider-Verse.</p></div>
-              </div>
-
-
-              <div class="interest-item">
-                <span class="interest-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="7" rx="1"/><path stroke-linecap="round" d="M5 11l2-5h10l2 5"/><circle cx="7.5" cy="18" r="1.4"/><circle cx="16.5" cy="18" r="1.4"/></svg>
-                </span>
-                <div><h5>Permis de conduire</h5><p>Préparation en cours.</p></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <footer class="site-footer">
-          <div class="footer-contact">
-            <a href="mailto:fares.bourahouane@gmail.com">fares.bourahouane@gmail.com</a>
-            <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-          </div>
-          <p class="footer-note">Trappes (78) · Fares Bourahouane — 2026</p>
-        </footer>
-      </div>
-    </section>
-
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
+
